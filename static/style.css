@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    background-image: url(/static/header.png);
+    background-repeat: no-repeat;
+    background-color: #e8f3ab;
+    border-bottom: 1px solid black;
+}
+
+#loginlogout {
+    position: absolute;
+    top: 80px;
+    right:0px;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    font-size: .9em;
+}
+
+#loginlogout a {
+    text-decoration: none;
+    color: blue;
+}
+
+#loginlogout a:hover {
+    color: #FF0000;
+}
+
+#leftmenu {
+    position: absolute;
+    top: 101px;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+}
+
+#leftmenu ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+#leftmenu a {
+    text-decoration: none;
+    width: 177px;
+    color: #222222;
+    background-color: #DDDDDD;
+    display: inline-block;
+    border: 1px solid grey;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+#leftmenu a:hover {
+    color: black;
+    background-color: #EEE;
+}
+
+#content {
+    position: absolute;
+    top: 111px;
+    left: 200px;
+    right: 0px;
+    bottom: 0px;
+    background-color: white;
+    padding: 10px;
+}
+
+#content table {
+    border: 1px solid #888;
+    width: 500px;
+    border-spacing: 0;
+}
+
+#content table tr:nth-child(even) {
+    background: #FFF;
+}
+
+#content table tr:nth-child(odd) {
+    background: #EEE;
+}
+
+#content table tr th {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #888;
+    background-color: #DDDDFF;
+    margin: 0;
+    padding: 0;
+}
+
+#content table tr td {
+    margin: 0;
+    padding: 4px;
+}
+
+#content table tr td a {
+    text-decoration: none;
+    color: blue;
+}
+
+#content table tr td a:hover {
+    color: red;
+}
+
+#content i {
+    font-size: .9em;
+}
+
+.value {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}

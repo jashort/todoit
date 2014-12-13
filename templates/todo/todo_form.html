@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Pass{% endblock %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <table>
+        {{ form }}
+        </table>
+        <input type="submit" value="Save" />
+    </form>
+
+{% endblock %}

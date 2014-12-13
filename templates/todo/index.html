@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Todo Items{% endblock %}
+
+{% block content %}
+{% if todo_list %}
+    <table>
+        <tr>
+            <th colspan="4">Items</th>
+        </tr>
+        <tr class="center">
+            <td>Name</td>
+            <td>Due By</td>
+            <td>Complete</td>
+            <td><a href="add">Add New</a></td>
+        </tr>
+
+        {% for todo in todo_list %}
+        <tr>
+            <td><a href="{{ todo.pk }}">{{ todo.summary }}</a><br>
+                <small>{{ todo.text }}</small></td>
+            <td>{{ todo.due_by }}</td>
+            <td>{{ todo.complete }}</td>
+            <td> <a href="{{ todo.pk }}/delete">Delete</a></td>
+        </tr>
+        {% endfor %}
+
+    </table>
+{% else %}
+    <p>No items found. <a href="add">Add one</a></p>
+{% endif %}
+{% endblock %}

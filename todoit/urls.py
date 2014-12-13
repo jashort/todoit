@@ -1,10 +1,9 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import patterns, url, include
 from django.contrib import admin
+from todoit import views
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'todoit.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^items/', include('todo.urls', namespace='todo')),
+    url(r'^$', views.index),
 )
